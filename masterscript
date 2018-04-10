@@ -1,0 +1,21 @@
+bankds = read.csv(file.choose())
+
+#Question 1: Part B
+summary(bankds)
+
+summary(bankds$RefNum) #typeofmeas: nominal
+summary(bankds$age) #typeofmeas: ratio
+summary(bankds$job) #typeofmeas: categorical
+summary(bankds$marital) #typeofmeas: categorical
+summary(bankds$education) #typeofmeas: ordinal categorical
+summary(bankds$balance) #typeofmeas: ratio
+summary(bankds$housing) #typeofmeas: categorical
+summary(bankds$loan) #typeofmeas: categorical
+summary(bankds$contact) #typeofmeas: categorical
+summary(bankds$day) #typeofmeas: ordinal OR interval
+summary(bankds$month) #typeofmeas: categorical **
+summary(bankds$duration) #typeofmeas: 
+summary(bankds$deposit) #typeofmeas: ratio
+
+#Question 1: Part B
+bankds$contact<-NULL
